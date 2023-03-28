@@ -7,6 +7,8 @@
         <title>LWS Assignment 1 - Scoreboard</title>
         <link rel="icon" type="image/x-icon" href="./image/favicon.png" />
         <link rel="stylesheet" href="./style.css" />
+        <!-- import redux from cdn -->
+        <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
     </head>
 
     <body>
@@ -16,7 +18,7 @@
                 <div class="container">
                     <div class="header-wrapper">
                         <img
-                            src="./image/lws-logo 1.svg"
+                            src="./image/logo 1.svg"
                             alt="logo"
                             class="logo"
                         />
@@ -28,40 +30,40 @@
             <!-- matches  -->
             <div class="all-matches container">
                 <!-- Each form tag is Each row, This will render multiple times on Clicking 'Add Another Match' -->
-                <div class="match">
+                <!-- <div class="addmatch">
                     <div class="wrapper">
-                        <button class="lws-delete">
+                        <button class="delete" onclick="handleMatchDelete()">
                             <img src="./image/delete.svg" alt="" />
                         </button>
-                        <h3 class="lws-matchName">Match 1</h3>
+                        <h3 class="matchName">Match 1</h3>
                     </div>
                     <div class="inc-dec">
-                        <form class="incrementForm">
+                        <form class="incrementForm" onsubmit="incrementForm(event)">
                             <h4>Increment</h4>
                             <input
                                 type="number"
                                 name="increment"
-                                class="lws-increment"
+                                class="incrementInput"
                             />
                         </form>
-                        <form class="decrementForm">
+                        <form class="decrementForm" onsubmit="">
                             <h4>Decrement</h4>
                             <input
                                 type="number"
                                 name="decrement"
-                                class="lws-decrement"
+                                class="decrementInput"
                             />
                         </form>
                     </div>
                     <div class="numbers">
-                        <h2 class="lws-singleResult">120</h2>
+                        <h2 class="singleResult">120</h2>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- for adding another matches -->
             <div class="add_match">
-                <button class="btn lws-addMatch">Add Another Match</button>
-                <button class="lws-reset">
+                <button class="btn addMatch">Add Another Match</button>
+                <button class="reset">
                     <svg
                         fill="none"
                         width="24"

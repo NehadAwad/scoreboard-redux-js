@@ -165,7 +165,6 @@ h1.name {
 }
 .incrementForm {
   padding: 0 10px;
-
   color: rgb(191, 219, 254);
   line-height: 1.5rem;
 }
@@ -206,8 +205,8 @@ h1.name {
   transform: scale(0.9);
 }
 
-.lws-reset,
-.lws-delete {
+.reset,
+.delete {
   background-color: transparent;
   border: none;
   outline: none;
@@ -216,7 +215,7 @@ h1.name {
   transition: all 0.3s;
 }
 
-.lws-reset {
+.reset {
   display: flex;
   gap: 5px;
   align-items: center;
